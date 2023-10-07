@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar CSS */
+
+nav{
+    display: flex;   
+    color: white;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    opacity: 0.8;
+    background: linear-gradient(135deg,red,blue);
+    /* width: 100%; */
+}
+.background{
+    background:url("../img/bg2.jpg"),url("../img/bg1.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    background: linear-gradient(135deg, blue, red);
+    
+}
+nav ul{
+    /* border: 2px solid red; */
+    width: 70%;
+    display: flex; 
+}
+nav ul img{
+    /* border: 2px solid rgb(30, 44, 236); */
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    /* margin-right: 40px; */
+    
+}
+nav ul a{
+    /* border: 2px solid rgb(30, 44, 236); */
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+    
+}
+
+nav ul a:hover{
+    color:rgb(187, 184, 184);
+}
+nav div{
+    width: 30%;
+    /* border: 2px solid red; */
+}
+nav div input{
+    margin-left: 10rem;
+    margin-top: 1rem;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+nav div button:hover{
+    border-radius: 4px;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+
+/* Box CSS */
+
+.box{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    /* font-size: 18px; */
+    padding: 10px;
+}
+
+/* Section1 */
+
+.section1{
+    /* border: 2px solid red; */
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* width: 100%; */
+    
+}
+.first,.second{
+    margin-top: 10rem;
+}
+.first h1{
+    font-size: 2rem;
+}
+.first button{
+    /* margin-top: 5px; */
+    padding: 5px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 3px;
+}
+.second img{
+    border-radius: 30rem;
+    height:11rem;
+    width: 11rem;
+}
+
+/* Section2 */
+.second2 img{
+    /* border: 2px solid blue; */
+    border-radius: 15px;
+}
+.box2{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+.seconde img {
+    height: 141px;
+    margin-top: 74px;
+    border-radius: 8px;
+}
+.box2 .first2{
+    margin-top: 4rem;
+    /* border: 2px solid red; */
+    width: 50%;
+    padding: 10px;
+}
+.box2 .first2 h1{
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Victor Mono', monospace;
+}
+.box2 .second2{
+    margin-top: 4rem;
+}
+.first2 p{
+    font-size: 17px;
+}
+
+/* section3- contact section  */
+
+.section3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        background-color: rgba(124, 121, 121, 0.158);
+        height: 65vh;
+        /* width: 100%; */
+}
+.section3 h2{
+    margin-top: 10px;
+    margin-bottom:15px;
+}
+.section3 input{
+    width: 60%;
+    padding: 5px;
+    margin: 8px;
+}
+.section3 textarea{
+    width: 60%;
+    padding: 5px;
+    margin: 8px;
+}
+.section3 button{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 8px;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+.section3 button:hover{
+    color: #111;
+    background: #39ff14;
+    box-shadow: 0 0 50px #39ff14;
+    border: 2px solid white;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+    color: white;
+    /* width: 100%; */
+}
+.section3 a i{
+    margin-bottom: 10px;
+    margin-left: 75rem;
+    font-size: 2rem;
+}
+
+.burger{
+/* border: 2px solid red; */
+display: none;
+position: absolute;
+cursor: pointer;
+right: 67%;
+top: 15px;
+}
+.line{
+    background-color: white;
+    width: 33px;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width:1309px){
+    nav{
+        position: static;
+        transition:all 0.5s ease-out;
+        height: 400px;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightnav input {
+        margin-left: 0rem;
+        width: 8rem;
+        margin-top: 1px;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightnav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-h{
+        height: 50px;
+    }
+    .nav-v{
+        opacity: 0;
+    }
+    .move {
+        margin-right: 35rem;
+    }
+    .box2{
+        flex-direction: column-reverse;
+    }
+    .box {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .first, .second {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .first button{
+        margin-top: 10px;
+    }
+    
+    div#secondbox {
+        display: flex;
+        flex-direction: column;
+        
+    }    
+}
